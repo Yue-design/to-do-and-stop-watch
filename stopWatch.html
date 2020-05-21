@@ -1,5 +1,6 @@
 <!--
     1. buttons: start/end
+    2. DOM
 -->
 <!DOCTYPE html>
 <html>
@@ -7,24 +8,13 @@
         <title>STOP WATCH</title>
     </head>
     <body>
+        <div id="milliseconds"></div>
         <script>
             var printInterval = setInterval(() => {
-                const currentTime = new Date();
-                const milliseconds = currentTime.getMilliseconds();
-                document.getElementById("milliseconds").innerHTML = "milliseconds";
+            const currentTime = new Date();
+            const milliseconds = currentTime.getMilliseconds();
+            document.getElementById('milliseconds').innerHTML = milliseconds;
             }, 1000);
-            // function printInterval() {
-            //     var currentTime = new Date();
-            //     var milliseconds = currentTime.getMilliseconds();
-            //     console.log(setInterval(() => {
-            //         document.getElementById('milliseconds')
-            //     }, 1000);)
-            // };
-            // setInterval(() => {
-            //     const currentTime= new Date();
-            //     const milliseconds = currentTime.getMilliseconds();
-            //     document.getElementById('milliseconds').innerHTML = milliseconds;
-            // }, 1000);
         </script>
     </body>
 </html>
