@@ -1,4 +1,4 @@
-# clock app: calculating the time intervals
+# clock app: displaying the time and calculating the time intervals
 ## Features
 ### clock
 ### stopwatch
