@@ -1,25 +1,28 @@
-<!--
-    1. 12-hour clock: PM/AM
-    2. 24-hour clock 00:00:00.000
--->
 <!DOCTYPE = html>
 <html lang="en"> 
     <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="clock.css" rel="stylesheet" type="text/css">
         <title>CLOCK</title>
-        <style></style>
     </head>
     <body>
-        <form>
-        </form>
-        <script>
-            function printTime() {
-                var currentTime = new Date();
-                var hours = currentTime.getHours();
-                var minutes = currentTime.getMinutes();
-                var seconds = currentTime.getSeconds();
-                document.write(hours+":"+minutes+":"+seconds);
-            }
-            printTime();
-        </script>
+        <div class="wrapper clearfix">
+            <div class="clock-0-panel active">
+                <div class="clock-name" id="name-0">Twenty Four Hour Clock</div>
+                <div class="clock-time" id="time-0">13:14:15</div>
+            </div>
+
+            <div class="clock-1-panel">
+                <div class="clock-name" id="name-1">Twelve Hour Clock</div>
+                <div class="clock-time" id="time-1">01:02:03AM</div>
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-loop"></i>Refresh</button>
+            <button class="btn-full">Show in Twenty Four Hour</button>
+            <button class="btn-half">Show in Twelve Hour</button>
+        </div>
+        <script src="clock.js"></script>
     </body>
 </html> 
