@@ -1,20 +1,10 @@
-<!--
-    1. buttons: start/end
-    2. DOM
--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UFT-8">
         <title>STOP WATCH</title>
     </head>
     <body>
-        <div id="milliseconds"></div>
-        <script>
-            var printInterval = setInterval(() => {
-            const currentTime = new Date();
-            const milliseconds = currentTime.getMilliseconds();
-            document.getElementById('milliseconds').innerHTML = milliseconds;
-            }, 1000);
-        </script>
+        <script src="stopWatch.js"></script>
     </body>
 </html>
