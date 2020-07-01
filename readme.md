@@ -4,3 +4,4 @@
 ### stopwatch
 ## Techniques
 ## DOM
+## Date Module has better method to polish the codes
